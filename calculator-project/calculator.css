@@ -1,0 +1,58 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;   /* Center vertically */
+    height: 100vh;         /* Take full viewport height */
+    margin: 0;
+    background-color: #f0f0f0; /* Light background for the page */
+}
+
+#calculator-container {
+    background-color: #ffffff; /* White background for the calculator box */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text within the container */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally within the column */
+}
+
+input[type="number"] {
+    margin: 10px 0; /* Vertical margin, no horizontal margin */
+    padding: 12px;
+    width: 250px; /* Slightly wider input fields */
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+    padding: 12px 25px; /* More generous padding */
+    margin: 8px; /* Spacing between buttons */
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#result {
+    margin-top: 25px; /* More space above result */
+    font-size: 22px; /* Larger result text */
+    font-weight: bold;
+    color: #333;
+}
+
+#calculation-result {
+    color: #007bff; /* Blue color for the actual result number */
+    margin-left: 5px; /* Small space between "Result:" and the number */
+}
